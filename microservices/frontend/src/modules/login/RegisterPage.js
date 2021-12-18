@@ -15,12 +15,12 @@ export function RegisterPage () {
     getErrorMessage,
     initState: {
       model: {
+        firstname: '',
+        lastname: '',
         username: '',
+        email: '',
         password: '',
         password_confirm: '',
-        email: '',
-        name: '',
-        lastName: '',
         phone: '',
         address: ''
       },
@@ -78,22 +78,22 @@ export function RegisterPage () {
             help={state.error.email}
           />
           <FieldGroup
-            id='name'
-            name='name'
+            id='firstname'
+            name='firstname'
             type='text'
             placeholder='nombre'
             required
             onChange={onInputChange}
-            help={state.error.name}
+            help={state.error.firstname}
           />
           <FieldGroup
-            id='lastName'
-            name='lastName'
+            id='lastname'
+            name='lastname'
             type='text'
             placeholder='apellido'
             required
             onChange={onInputChange}
-            help={state.error.lastName}
+            help={state.error.lastname}
           />
           <FieldGroup
             id='phone'
